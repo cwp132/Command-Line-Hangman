@@ -67,7 +67,7 @@ function easyHang() {
             .then(function (answers) {
                 if (answers.guessing === '') {
                     console.log('Must enter a letter.')
-                    mediumHang();
+                    easyHang();
                 }
                 if (easyWord.includes(answers.guessing)) {
                     console.log('Nice');
